@@ -1,0 +1,428 @@
+body{
+    margin: 0;
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.banner-header-container::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0,0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.banner-header-container{
+    background-image: url(../assets/banner.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+header{
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+    border-bottom: 2px solid #70707C;
+    z-index: 5;
+    position: relative;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header .lp-ul{
+    list-style-type: none;
+    display: inline-block;
+    float: right;
+}
+
+header .lp-ul li{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+header .lp-ul li a:hover{
+    color: #6BBF8F;
+}
+
+.hamburger{
+    display: none;
+}
+
+.list{
+    display: none;
+}
+
+.banner{
+    padding: 80px 0 80px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 999;
+}
+
+
+
+.banner-heading{
+    font-size: 40px;
+}
+
+.banner-card-container{
+    width: 70%;
+    margin: 20px auto 20px auto;
+}
+
+.banner-card{
+    width:32%;
+    position: relative;
+    display: inline-block;
+
+}
+
+
+.card-content{
+    margin: 50px 0 50px 0;
+    border-right: 2px solid #70707C;
+}
+
+.banner-card:last-of-type .card-content{
+    border-right: none;
+}
+
+.card-icon{
+    color: #6BBF8F;
+}
+
+.card-container{
+    background-color: #fff;
+    width: 100%;
+}
+
+.card-content-header{
+    font-size: 20px;
+
+}
+
+.card-content p{
+    margin: 10px 0 10px 0;
+}
+
+.card-content p:last-of-type{
+    font-size: 14px;
+}
+
+.banner-button{
+    background: transparent;
+    border: 2px solid #6BBF8F;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    color: #6BBF8F;
+}
+
+.banner-button:hover{
+    background-color: rgba(255, 255, 255, 0.3) ;
+    color: white;
+    cursor: pointer;
+}
+
+.card{
+    width: 50%;
+    float: left;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.card img{
+    border-radius: 50%;
+}
+
+.card p:first-of-type{
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 30px;
+
+}
+
+.card p:last-of-type{
+    line-height: 20px;
+    color: #AEAEAE;
+    margin-bottom: 30px;
+}
+
+.card-button:hover{
+    color: green;
+}
+
+footer{
+    padding: 40px;
+   background-color: #6BBF8F;
+    color: white;
+    font-weight: bold;
+}
+
+
+.in-touch-header{
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+}
+
+form{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.name{
+    width: 49%;
+    float: left;
+}
+
+.name p{
+    margin-bottom: 10px;
+}
+
+.input-box{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #A4CCB0;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.email{
+    width: 49%;
+    float: right;
+}
+
+.email p{
+    margin-bottom: 10px;
+}
+
+.message-container p{
+    margin-bottom: 10px;
+}
+
+
+.message-container textarea{
+    width: 100%;
+    background: transparent;
+    border: 2px solid #A4CCB0;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin-bottom: 10px;
+}
+
+
+.submit-button{
+
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    color: #fff;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 992px)
+{
+   header .lp-ul{
+       display: none;
+   }
+    header a{
+        line-height: 35px;
+    }
+
+    .hamburger {
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .hamburger:hover .bar1{
+        transform: rotate(-40deg) translate(-9px, 6px);
+    }
+
+    .hamburger:hover .bar2{
+        opacity: 0;
+    }
+
+    .hamburger:hover .bar3{
+        transform: rotate(40deg) translate(-8px, -8px);
+    }
+
+
+    .hamburger:hover .list{
+        display: block;
+        position: absolute;
+
+    }
+
+    .list li{
+        width: 100px;
+        background: black;
+        border-bottom: 2px solid #fff;
+
+    }
+
+    .list li:hover {
+
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.2s;
+    }
+
+    .banner-card{
+       width: 32%;
+   }
+
+    .card{
+        width: 100%;
+        float: none;
+    }
+
+    .name{
+        width: 100%;
+        float: none;
+    }
+
+    .email{
+        width: 100%;
+        float: none;
+    }
+}
+
+
+@media only screen and (max-width: 600px)
+{
+ header .lp-ul{
+     display: none;
+ }
+
+    header a{
+        line-height: 35px;
+    }
+    .hamburger {
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .hamburger:hover .bar1{
+        transform: rotate(-45deg) translate(-19px, 6px);
+    }
+
+    .hamburger:hover .bar2{
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .hamburger:hover .bar3{
+        opacity: 0;
+    }
+
+
+    .hamburger:hover .list{
+        display: block;
+        position: absolute;
+
+    }
+
+    .list li{
+        width: 70px;
+        background: black;
+        border-bottom: 2px solid #fff;
+
+    }
+
+
+
+    .bar1, .bar2, .bar3 {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .banner-card{
+        width: 100%;
+    }
+
+
+    .card-content{
+        margin: 20px 0;
+        border: none;
+    }
+
+    .card{
+        width: 100%;
+        float: none;
+    }
+
+    .name{
+        width: 100%;
+        float: none;
+    }
+
+    .email{
+        width: 100%;
+        float: none;
+    }
+
+}
